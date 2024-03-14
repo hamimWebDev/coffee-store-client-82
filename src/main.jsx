@@ -1,15 +1,23 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import Root from "./Layout/Root";
+import AddCoffee from "./Components/AddCoffee/AddCoffee";
+import UpdateCoffee from "./Components/UpdateCoffee/UpdateCoffee";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root></Root>,
+  },
+  {
+    path: "/addCoffee",
+    element: <AddCoffee></AddCoffee>,
+  },
+  {
+    path: "/updateCoffee",
+    element: <UpdateCoffee></UpdateCoffee>,
   },
 ]);
 
