@@ -32,6 +32,7 @@ const AddCoffee = () => {
             confirmButtonText: "Cool",
           });
         }
+        event.target.reset();
       });
   };
   return (
