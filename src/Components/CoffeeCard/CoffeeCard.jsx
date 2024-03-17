@@ -45,37 +45,37 @@ const CoffeeCard = ({ coffee, allCoffees, setAllCoffee }) => {
           <img className="h-60" src={photo} />
         </figure>
         <div className="card-body col-span-3 text-black">
-          <h2 className="flex  text-lg font-semibold">
+          <h2 className="flex  lg:text-lg font-semibold">
             Name: <p className="ml-2 text-gray-600">{name}</p>
           </h2>
-          <h2 className="flex text-lg font-semibold">
+          <h2 className="flex lg:text-lg font-semibold">
             Chef: <p className="ml-2 text-gray-600">{chef}</p>
           </h2>
-          <h2 className="flex text-lg font-semibold">
+          <h2 className="flex lg:text-lg font-semibold">
             Price: <p className="ml-2 text-gray-600">{Price}tk</p>
           </h2>
-          <h2 className="flex text-lg font-semibold">
+          <h2 className="flex lg:text-lg font-semibold">
             Supplier: <p className="ml-2 text-gray-600">{supplier}tk</p>
           </h2>
-          <h2 className="flex text-lg font-semibold">
+          <h2 className="flex lg:text-lg font-semibold">
             Category: <p className="ml-2 text-gray-600">{category}tk</p>
           </h2>
         </div>
         <div className="col-span-1 flex justify-center items-center">
           <div className="grid grid-cols-1">
             <button className="bg-[#6F4E37] p-3 rounded-lg mb-3">
-              <IoMdEye className="text-xl text-white" />
+              <IoMdEye className="lg:text-xl text-white" />
             </button>
             <Link to={`/updateCoffee/${_id}`}>
               <button className="bg-gray-800 p-3 rounded-lg mb-3">
-                <FaPencilAlt className="text-xl text-white" />
+                <FaPencilAlt className="lg:text-xl text-white" />
               </button>
             </Link>
             <button
               onClick={() => handleDelete(_id)}
               className="bg-red-800 p-3 rounded-lg mb-3"
             >
-              <MdDelete className="text-xl text-white" />
+              <MdDelete className="lg:text-xl text-white" />
             </button>
           </div>
         </div>
